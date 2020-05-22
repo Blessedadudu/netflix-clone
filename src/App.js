@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import Body from './components/Body/Body'
 
 function App() {
   return (
     <div>
-      {/* <p>Welcome to netflix clone</p> */}
       <Header/>
+      <Body/>
     </div>
   );
 }
