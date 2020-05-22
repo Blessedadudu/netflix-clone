@@ -12,9 +12,18 @@ const Header = () => {
                 <img src={netflixheader} alt='caroimage'/>
             </picture>
             <div className='imageOverlay'></div>
-            <div>
+            <div className='headerFlex'>
                 <h1>Netflix</h1>
                 <button>Sign In</button>
+            </div>
+            <div className='headerUnlimited'>
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <div className='inputEmail'>
+                    <input type='email' placeholder='Email address'/>
+                    <label>Join the community<span>&#x203a;</span></label>
+                </div>
+                <h4>Ready to watch? Enter your email to create or restart your membership</h4>
             </div>
         </div>
     )

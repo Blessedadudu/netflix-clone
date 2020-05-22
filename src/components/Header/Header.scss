@@ -1,6 +1,6 @@
 .header {
     min-height: 85vh;
-    color: red;
+    color: white;
     position: relative;
 
 
@@ -22,8 +22,71 @@
         height: 100%;
         z-index: -2;
         background: rgba(0, 0, 0, 0.4);
-        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 110, 41, 0.8)), color-stop(60%, rgba(204, 44, 44, 0.938)), to(rgba(255, 255, 255, 0.8)));
-      }
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+    }
+
+    .headerFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+
+        button {
+            padding: .5rem 1rem;
+            color: white; 
+            background-color: red;
+            outline: none;
+            border: none;
+            border-radius: .3rem;
+            font-size: 17px;
+
+        }
+
+       
+    }
+
+    .headerUnlimited {
+        // width: 70;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 4rem;
+        max-width: 70%;
+        // transform: translateX(50%);
+
+
+        h1 {
+            font-size: 54px;
+            font-weight: bold;
+        }
+
+        h2 {
+            padding: 1rem 0;
+        }
+
+        .inputEmail {
+
+            font-size: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 100vh;
+            // text-align: center;
+            input {
+                // height: 6vh;
+                padding: 1rem 7rem 1rem 2rem;
+            }
+            label {
+                background-color: red;
+                font-size: 30px;
+                padding: .45rem 4rem;
+            }
+        }
+
+        h4 {
+            padding: 1rem
+        }
+    }
 
 }
 
