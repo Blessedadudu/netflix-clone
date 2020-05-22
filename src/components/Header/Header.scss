@@ -1,0 +1,29 @@
+.header {
+    min-height: 85vh;
+    color: red;
+    position: relative;
+
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -4;
+        background-image: linear-gradient(to left bottom, #92835b, #ff7730)
+    }
+
+    .imageOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background: rgba(0, 0, 0, 0.4);
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 110, 41, 0.8)), color-stop(60%, rgba(204, 44, 44, 0.938)), to(rgba(255, 255, 255, 0.8)));
+      }
+
+}
+
