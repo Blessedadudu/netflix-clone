@@ -2,8 +2,6 @@
     // background-color: rgba(46, 139, 86, 0.705);
     z-index: -2;
     color: white;
-    // border-bottom: 8px solid rgb(44, 44, 44);
-
 }
 
 
@@ -11,8 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 6rem;
-    min-height: 60vh;
+    padding: 2rem 6rem;
+    // max-height: 90vh;
     border-bottom: 8px solid rgb(44, 44, 44);
 
     .enjoy {
@@ -53,6 +51,22 @@
             z-index: -1;
             // border: 2px solid rgb(0, 0, 0)
 
+        }
+
+        .strangerCard {
+            border: 3px solid  rgb(44, 44, 44);
+            border-radius: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:  .5rem 1rem;
+            width: 65%;
+            max-height: 20vh;
+
+            img {
+                width: 3rem;
+                height: auto;
+            }
         }
 
     }
