@@ -5,6 +5,15 @@ import './Accordion.scss';
 
 class Accordion extends React.Component {
     
+    state = {
+        accordion: false
+    }
+
+    handleAccordion = () => {
+        this.setState({
+            accordion: !this.state.accordion
+        })
+    }
 
     render () {
         return (
@@ -15,9 +24,9 @@ class Accordion extends React.Component {
                     <div className='accordionText'>
                         <div className='accordionHeading'>
                             <h1>What is Netflix</h1>
-                            <h3>X</h3>
+                            <h3 onClick={this.handleAccordion}>XXXSSDSDFD</h3>
                         </div>
-                        <h2>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br/> <br/>
+                        <h2 className={ this.state.accordion ? 'showText show' : 'showText' }>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br/> <br/>
                         You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</h2>
                     </div>
                     
