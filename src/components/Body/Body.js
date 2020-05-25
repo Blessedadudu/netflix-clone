@@ -13,7 +13,7 @@ const Body = () => {
                     </div>
                     <div className='imageRel'>
                         {/* <h1>omage</h1> */}
-                        <img alt="" className="card" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img"/>
+                        <img alt="" className="card1" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img"/>
                         <video className="our-story-card-video" autoPlay playsInline muted loop ><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"/></video>
                     </div>
             </section>
