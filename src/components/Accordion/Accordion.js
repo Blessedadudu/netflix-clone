@@ -12,29 +12,45 @@ const Accordion = () => {
           open: true
         },
         {
-          question: 'Who is the most awesome person?',
-          answer: 'You. The Viewer.',
+          question: 'How much does Netflix cost?',
+          answer: 'Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦2,900 to ₦4,400 a month. No extra costs, no contracts.',
           open: false
         },
         {
-          question: 'How many questions does it take to make a successful FAQ Page?',
-          answer: 'This many.',
+          question: 'Where can I watch?',
+          answer: "Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.",
           open: false
-        }
+        },
+        {
+            question: 'How do I cancel?',
+            answer: "Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.",
+            open: false
+        },
+        {
+            question: 'What can I watch on Netflix?',
+            answer: "Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.",
+            open: false
+        },
+        
+        
     ]);
 
 
     const toggleAccordion = index => {
-        setAccordion(accordion.map((accordion, i) => {
+        setAccordion(accordion.map((items, i) => {
           if (i === index) {
-            accordion.open = !accordion.open
+            items.open = !items.open;
           } else {
-            accordion.open = false;
-          }
-    
-          return accordion;
+            items.open = false;
+          } 
+          console.log(items.open)
+          return items;
+         
         }))
+    
+        
     }
+
     return (
         <div className='accordion'>
             <h1>Frequently Asked Questions</h1>
@@ -42,13 +58,13 @@ const Accordion = () => {
                 Accordion
                 <div >
                     {accordion.map((items, index) => (
-                        <div onClick={() => toggleAccordion(index)} className='accordionText'>
-                            <div  className='accordionHeading'>
+                        <div key={index} className='accordionText'>
+                            <div className='accordionHeading'>
                                 <h1>{items.question}</h1>
-                                <h3>XXX</h3>
+                                <h3 onClick={() => toggleAccordion(index)}>XXX</h3>
                             </div>
-                            <h2 className={ 'showText show' }>{items.answer}</h2>
-                            
+                            <h2 className={ items.open ? 'show' : 'showText' }>{items.answer}</h2>
+
                         </div>
                     ))}
 
