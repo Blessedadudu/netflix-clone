@@ -1,5 +1,5 @@
 .header {
-    min-height: 85vh;
+    min-height: 95vh;
     color: white;
     position: relative;
     border-bottom: 8px solid rgb(44, 44, 44);
@@ -29,8 +29,17 @@
     .headerFlex {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 3rem;
+        // align-items: center;
+        padding: 2rem 3rem 4rem;
+
+        .svg-icon {
+            position: absolute;
+            fill: #e50914;
+            line-height: normal;
+            width: 130px;
+            height: auto;
+        }
+       
 
         button {
             padding: .5rem 1rem;
@@ -76,14 +85,25 @@
             // text-align: center;
             input {
                 // height: 6vh;
-                padding: 1.4rem 15rem 1.4rem 1rem;
+                padding: 24px 200px 15px 20px;
+                font-size: 18px;
             }
             label {
-                background-color: red;
-                font-size: 30px;
-                padding: 14.5px 80px;
+                background-color: #e50914;
+                font-size: 25px;
+                padding: 17px 80px 17px 40px;
                 text-transform: uppercase;
                 white-space: nowrap;
+                position: relative;
+
+                span {
+                    font-size: 18px;
+                    transform: scale(1.5, 2.2);
+                    position: absolute;
+                    top: 18px;
+                    right: 60px
+
+                }
             }
         }
 
@@ -92,4 +112,37 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 1000px ) {
+    .header {
+        // color: red ;
+        .headerUnlimited { 
+            .inputEmail {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    padding: 14px 250px 10px 20px;
+                    font-size: 18px;
+                }
+
+                label {
+                    background-color: #e50914;
+                    font-size: 18px;
+                    padding: 10px 40px 10px 20px;
+                    margin-top: 1rem;
+
+                    span {
+                        font-size: 12px;
+                        transform: scale(1.5, 2.2);
+                        position: absolute;
+                        top: 11px;
+                        right: 25px
+
+                    }
+                }
+            }
+        }
+    }
 }
