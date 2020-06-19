@@ -18,22 +18,22 @@
     border-bottom: 8px solid rgb(44, 44, 44);
 
     .enjoy {
-        // width: 40%;
         flex: 0 0 50%;
+
 
         h1 {
             font-size: 56px;
             font-weight: bold;
+            padding-bottom: 1rem;
         }
     
         p {
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 
     .imageRel {
         position: relative;
-        flex: 0 0 40%;
 
         img {
             width: auto;
@@ -56,7 +56,7 @@
 
         .card1 {
             width: 527px;
-            height: 400px;
+            height: 400px
         }
 
        
@@ -135,4 +135,82 @@
     }
 }
 
-// @medi
+
+@media only screen and (max-width: 1100px) {
+    .section1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 4rem;
+
+
+        .enjoy {
+
+            padding: 1rem 0 0;
+    
+            h1 {
+                font-size: 36px;
+                font-weight: bold;
+                padding-bottom: 1rem;
+            }
+        
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section1 {
+        flex-direction: column;
+        padding: 2rem 2rem;
+    
+
+        .enjoy {
+
+            padding: 1rem 0 0;
+    
+            h1 {
+                font-size: 36px;
+                font-weight: bold;
+                padding-bottom: 1rem;
+            }
+        
+            p {
+                font-size: 18px;
+            }
+        }
+        
+
+        .imageRel {
+            position: relative;
+    
+            img {
+                width: auto;
+                max-height: 60vh;
+            }
+     
+        
+    
+            video {
+                position: absolute;
+                left: 0; 
+                right: 0; 
+                margin-left: auto; 
+                margin-right: auto;
+                width: 20.8rem;
+                height: 27rem;
+                top: -14%;
+                z-index: -1;
+            }
+    
+            .card1 {
+                width: 450px;
+                height: 350px;
+                // margin-bottom: 5rem;
+            }
+  
+        }
+     
+    }
+}
