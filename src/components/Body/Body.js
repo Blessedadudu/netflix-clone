@@ -2,7 +2,7 @@ import React from 'react';
 import './Body.scss'
 
 const Body = () => {
-    return (
+    return ( 
         <div className='body'>
 
             {/* <h3>Welcome to body</h3> */}
