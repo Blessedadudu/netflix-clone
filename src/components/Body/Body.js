@@ -26,7 +26,7 @@ const Body = () => {
                            <div>
                                 <img alt="" className="card" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" data-uia="our-story-card-img"/>
                            </div>
-                            <div>
+                            <div className='strange'>
                                 <h4>Stranger Things</h4>
                                 <p>Downloading...</p>
                             </div>

@@ -99,6 +99,17 @@
             width: 3rem;
             height: auto;
         }
+
+
+        .strange {
+            margin-right: auto;
+            padding-left: 1rem;
+        }
+
+        p {
+            color: #0071eb;
+            text-align: left;
+        }
         
         
     }
@@ -176,7 +187,7 @@
             padding: 1rem 0 0;
     
             h1 {
-                font-size: 36px;
+                font-size: 25px;
                 font-weight: bold;
                 padding-bottom: 1rem;
             }
@@ -218,4 +229,55 @@
         }
      
     }
+
+    .section22 {
+        flex-direction: column-reverse; 
+        text-align: center;
+
+        .section2 {
+            img {
+                width: 27rem;
+                height: auto;
+            }
+        }
+
+        .strangerCard {
+            border: 3px solid  rgb(44, 44, 44);
+            border-radius: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:  .5rem 1rem;
+            width: 300px;
+            height: 75px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            left: -7%; 
+            right: 0; 
+            margin-left: auto; 
+            // margin-right: auto;
+            margin-left: 5.5rem;
+            top: 70%;
+    
+            img {
+                width: 2.5rem;
+                height: auto;
+            }
+
+            h4 {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            p {
+                font-size: 12px;
+                text-align: left;
+            }
+           
+            
+            
+        }
+    }
+
+
 }
