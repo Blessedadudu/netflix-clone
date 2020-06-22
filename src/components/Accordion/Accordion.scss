@@ -4,8 +4,12 @@
     text-align: center;
     padding: 4rem 0;
 
+    .heading {
+        font-size: 50px;
+    }
+
     .mainAccordion {
-        padding: 4rem 0;
+        padding: 3rem 0;
         width: 60%;
         margin: 0 auto;
     }
@@ -19,6 +23,8 @@
 
         h1 {
             // padding: 1.5rem;
+            font-size: 26px;
+            font-weight: normal;
         }
 
     
@@ -32,25 +38,23 @@
 
         .showText {
             padding: 0 1.5rem;
-            transition: all .1s ease-in-out;
+            transition: all .2s ease-in-out;
             // display: none;
             height: 0;
             overflow: hidden;
             
-        }
+        } 
 
        
 
         .show {
             height: 100%;
             padding: 1.5rem;
+            transition: all .2s ease-in-out;
+            // letter-spacing: 1px;
+            font-size: 1.625rem;
+            font-weight: 400;
         }
-
-
-        // .hide {
-        //     // color:  red;
-        //     transition: all 1s linear;
-        // }
 
     }
 
