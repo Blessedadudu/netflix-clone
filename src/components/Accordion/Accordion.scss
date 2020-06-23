@@ -60,17 +60,22 @@
 
 }
 
+.checkbox {
+    display: none;
+}
+
 .check {
-    background-color: black;
+    // background-color: black;
     // border-radius: 50%;
     width: 100%;
+    cursor: pointer;
 
     .icon {
         position: relative;
     
         &,
         &::after {
-            width: 2.5rem;
+            width: 1.3rem;
             height: 2px;
             display: inline-block;
             background-color: white;
@@ -79,11 +84,17 @@
             content: "";
             position: absolute;
             left: 0;
-            transition: all .2s;
+            top: .01rem;
+            transform: rotate(90deg);
         }
-        &::after { top: .8rem; }
-    }
-    
-    
+    }  
 }
- 
+
+.checkbox:checked + .check > .icon {
+        transform: rotate(45deg);
+
+}
+
+.checkbox:checked + .check > .icon::after {
+    top: 0.01rem;
+}
