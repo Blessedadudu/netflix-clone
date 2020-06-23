@@ -61,13 +61,21 @@ const Accordion = () => {
                         <div key={index} className='accordionText'>
                             <div className='accordionHeading'>
                                 <h1>{items.question}</h1>
-                                <h3 onClick={() => toggleAccordion(index)}>XXX</h3>
+                                <div  className='toggle'>
+                                    <input type="checkbox" class="checkbox" id="navi-toggle"/> 
+
+                                    <label for="navi-toggle" className="check" onClick={() => toggleAccordion(index)}>
+                                        <span class="icon">&nbsp;</span>
+                                    </label>
+                                    <div class="navigation__background">&nbsp;</div>
+                                </div>
                             </div>
                             <h2 className={ items.open ? 'show' : 'showText' }>{items.answer}<br/><br/>{items.answer2}</h2>
 
+                           
                         </div>
                     ))}
-
+                    
                 </div>
 
             </div>

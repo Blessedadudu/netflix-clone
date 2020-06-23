@@ -37,7 +37,7 @@
         }
 
         .showText {
-            padding: 0 1.5rem;
+            // padding: 0 1.5rem;
             transition: all .2s ease-in-out;
             // display: none;
             height: 0;
@@ -60,4 +60,30 @@
 
 }
 
+.check {
+    background-color: black;
+    // border-radius: 50%;
+    width: 100%;
 
+    .icon {
+        position: relative;
+    
+        &,
+        &::after {
+            width: 2.5rem;
+            height: 2px;
+            display: inline-block;
+            background-color: white;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+        &::after { top: .8rem; }
+    }
+    
+    
+}
+ 
