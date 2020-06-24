@@ -37,12 +37,13 @@
         }
 
         .showText {
-            // padding: 0 1.5rem;
-            transition: all .2s ease-in-out;
-            // display: none;
+            transition: all .1s linear;
             height: 0;
             overflow: hidden;
-            
+            padding: 0 1.5rem;
+
+            font-size: 1.625rem;
+            font-weight: 400;
         } 
 
        
@@ -50,18 +51,17 @@
         .show {
             height: 100%;
             padding: 1.5rem;
-            transition: all .2s ease-in-out;
-            // letter-spacing: 1px;
-            font-size: 1.625rem;
-            font-weight: 400;
+            transition: all .1s linear;
         }
 
     }
 
 }
 
-.checkbox {
-    display: none;
+
+.toggle {
+
+    margin-top: 1rem;
 }
 
 .check {
@@ -90,11 +90,10 @@
     }  
 }
 
-.checkbox:checked + .check > .icon {
-        transform: rotate(45deg);
 
-}
 
-.checkbox:checked + .check > .icon::after {
-    top: 0.01rem;
+.icon2 {
+    color: red;
+    background-color: red;
+    transform: rotate(45deg);
 }
