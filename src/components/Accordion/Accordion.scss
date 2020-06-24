@@ -93,7 +93,50 @@
 
 
 .icon2 {
-    color: red;
-    background-color: red;
     transform: rotate(45deg);
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .icon2 {
+        transform: rotate(4deg);
+    }
+
+    .accordion {
+        color: white;
+        text-align: center;
+        padding: 4rem 0;
+    
+        .heading {
+            font-size: 40px;
+        }
+    
+        .mainAccordion {
+            padding: 2rem 0;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .icon2 {
+        transform: rotate(4deg);
+    }
+
+    .accordion {
+        color: white;
+        text-align: center;
+        padding: 4rem 0;
+    
+        .heading {
+            font-size: 30px;
+        }
+    
+        .mainAccordion {
+            padding: 1rem 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 }
