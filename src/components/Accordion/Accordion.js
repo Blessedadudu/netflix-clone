@@ -7,7 +7,7 @@ const Accordion = () => {
 
     const [accordion, setAccordion] = useState([
         {
-          question: 'What is Netflix',
+          question: 'What is Netflix?',
           answer: 'Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
           answer2: 'You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There\'s always something new to discover and new TV shows and movies are added every week!',
           open: false
@@ -81,7 +81,7 @@ const Accordion = () => {
 
             <div className='inputEmail'>
                 <input type='email' placeholder='Email address'/>
-                <label>Join the community<span>&#x203a;</span></label>
+                <label>Try 30 days free<span>&#x203a;</span></label>
             </div>
             <h4>Ready to watch? Enter your email to create or restart your membership</h4>
         </div>

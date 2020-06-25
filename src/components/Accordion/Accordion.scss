@@ -56,6 +56,23 @@
 
     }
 
+    .inputEmail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            padding: 1rem 14rem 1rem .3rem;
+            // font-size: 16px;
+        }
+
+        label {
+            background-color: red;
+            padding: 1rem 2rem;
+            white-space: nowrap;
+        }
+    }
+
 }
 
 
