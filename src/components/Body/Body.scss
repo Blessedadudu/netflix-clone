@@ -3,7 +3,7 @@
     z-index: -2;
     color: white;
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
 }
 
 
@@ -239,23 +239,22 @@
 
         .section2 {
             img {
-                width: 27rem;
-                height: auto;
+                width: 20rem;
+                height: 17rem;
             }
         }
 
         .strangerCard {
-            border: 3px solid  rgb(44, 44, 44);
-            border-radius: 1rem;
+            border: 2px solid  rgb(44, 44, 44);
+            border-radius: .5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding:  .5rem 1rem;
-            width: 300px;
-            height: 75px;
-            background-color: rgb(0, 0, 0);
+            padding:  .8rem 1rem;
+            width: 240px;
+            height: 60px;
             position: absolute;
-            left: -7%; 
+            left: -15%; 
             right: 0; 
             margin-left: auto; 
             // margin-right: auto;
@@ -263,8 +262,10 @@
             top: 70%;
     
             img {
-                width: 2.5rem;
+                width: 2rem;
                 height: auto;
+                padding-left: .1rem;
+                justify-self: start;
             }
 
             h4 {

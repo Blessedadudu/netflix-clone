@@ -53,7 +53,7 @@ const Accordion = () => {
     }
 
     return ( 
-        <div className='accordion'>
+        <div className='accordion'> 
             <h1 className='heading'>Frequently Asked Questions</h1>
             <div className='mainAccordion'>
                 <div> 

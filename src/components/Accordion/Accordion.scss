@@ -4,6 +4,7 @@
     text-align: center;
     padding: 4rem 0;
     border-bottom: 8px solid rgb(44, 44, 44);
+    max-width: 100vw;
 
     .heading {
         font-size: 50px;
@@ -225,7 +226,7 @@
                 padding: 1rem 18rem 1rem .5rem;
                 font-size: 13px;
                 margin-bottom: 1rem;
-            }
+            } 
     
            
         }
@@ -255,4 +256,31 @@
     }
 
     
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .accordion {
+       
+
+        .inputEmail {
+
+            input {
+                padding: 1rem 10rem 1rem .5rem;
+                font-size: 13px;
+                margin-bottom: 1rem;
+            } 
+    
+           
+        }
+
+        .ready {
+            font-weight: 400;
+            padding: 1rem 0;
+            width: 90vw;
+        
+        }
+    }
+
 }
