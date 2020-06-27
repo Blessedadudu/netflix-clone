@@ -118,7 +118,7 @@
 
 .section3 {
     .imageRel {
-        position: relative;
+        position: relative; 
         flex: 0 0 40%;
         margin: 2rem 0;
 
@@ -203,27 +203,29 @@
             position: relative;
     
             img {
-                width: auto;
+                width: 400px;
                 max-height: 60vh;
             }
+
      
         
     
             video {
                 position: absolute;
-                left: 0; 
+                display: block;
+                left: -1px; 
                 right: 0; 
-                margin-left: auto; 
-                margin-right: auto;
-                width: 20.8rem;
-                height: 27rem;
-                top: -14%;
+                // margin-left: auto; 
+                // margin-right: auto;
+                width: 255px;
+                height: 209px;
+                top: 20px;
                 z-index: -1;
             }
     
             .card1 {
-                width: 450px;
-                height: 350px;
+                width: 350px;
+                height: 260px;
                 // margin-bottom: 5rem;
             }
   
@@ -289,7 +291,7 @@
             }
     
             img {
-                width: auto;
+                width: 370px;
                 max-height: 50vh;
             }
      
@@ -298,9 +300,9 @@
                 right: 0; 
                 margin-left: auto; 
                 margin-right: auto;
-                width: 18.5rem;
+                width: 14.5rem;
                 height: 25rem;
-                top: -23%;
+                top: -38%;
                 z-index: -1;
                 // border: 2px solid rgb(0, 0, 0)
     

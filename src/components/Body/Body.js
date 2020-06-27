@@ -13,7 +13,7 @@ const Body = () => {
                     </div>
                     <div className='imageRel'>
                         {/* <h1>omage</h1> */}
-                        <img alt="" className="card1" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img"/>
+                        <img alt="" className="card1 card11" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img"/>
                         <video className="our-story-card-video" autoPlay playsInline muted loop ><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"/></video>
                     </div>
             </section>
@@ -33,7 +33,7 @@ const Body = () => {
                             <div>
                                  <img alt=""  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" data-uia="our-story-card-img"/>
                             </div>
-                       </div>
+                       </div> 
                     </div>
                     <div className='enjoy'>
                         <h1>Download your shows to watch offline.</h1>

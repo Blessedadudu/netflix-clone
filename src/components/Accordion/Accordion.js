@@ -62,7 +62,7 @@ const Accordion = () => {
                             <div className='accordionHeading' onClick={() => toggleAccordion(index)} >
                                 <h1>{items.question}</h1>
                                 <div  className='toggle'>
-                                    <label for="navi-toggle" className='check' >
+                                    <label htmlFor="navi-toggle" className='check' >
                                         <span className={`icon ${items.open && 'icon2' }`}>&nbsp;</span>
                                     </label>
                                 </div>
