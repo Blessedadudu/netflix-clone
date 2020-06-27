@@ -56,7 +56,7 @@ const Accordion = () => {
         <div className='accordion'>
             <h1 className='heading'>Frequently Asked Questions</h1>
             <div className='mainAccordion'>
-                <div>
+                <div> 
                     {accordion.map((items, index) => (
                         <div key={index} className='accordionText'>
                             <div className='accordionHeading' onClick={() => toggleAccordion(index)} >
@@ -78,12 +78,13 @@ const Accordion = () => {
             </div>
 
 
-
-            <div className='inputEmail'>
-                <input type='email' placeholder='Email address'/>
-                <label>Try 30 days free<span>&#x203a;</span></label>
+            <div className='flex-reverse'>
+                <div className='inputEmail'>
+                    <input type='email' placeholder='Email address'/>
+                    <label>Try 30 days free<span>&#x203a;</span></label>
+                </div>
+                <h4 className='ready'>Ready to watch? Enter your email to create or restart your membership.</h4>
             </div>
-            <h4 className='ready'>Ready to watch? Enter your email to create or restart your membership.</h4>
         </div>
     )
    
