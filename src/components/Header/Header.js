@@ -1,7 +1,7 @@
 import React from 'react';
 import netflixheader from '../../assets/netflixheader.jpg';
 import './Header.scss';
-
+ 
 const Header = () => {
     return ( 
         <div className='header'> 
