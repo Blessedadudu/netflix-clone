@@ -3,6 +3,7 @@
     color: white;
     position: relative;
     border-bottom: 8px solid rgb(44, 44, 44);
+    overflow: hidden;
 
 
     img {
@@ -65,6 +66,16 @@
         // transform: translateX(50%);
 
 
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 10%;
+            z-index: -4;
+            background-image: linear-gradient(to left bottom, #92835b, #ff7730)
+        }
+
         h1 {
             font-size: 53px;
             font-weight: bold;
@@ -121,6 +132,10 @@
 @media only screen and (max-width: 1000px ) {
     .header {
         // color: red ;
+
+        img {
+            width: 120%;
+        }
         .headerUnlimited { 
 
             // max-width: 80%;
@@ -174,6 +189,10 @@
     .header {
         min-height: 75vh;
 
+        img {
+            width: 150%;
+        }
+
         .headerUnlimited { 
             max-width: 85%;
             padding: 1rem 0;
@@ -186,7 +205,7 @@
                     padding: 14px 140px 10px 20px;
                     font-size: 15px;
                 }
-            }
+            } 
         }
     }
 }
@@ -196,6 +215,10 @@
     .header {
         min-height: 75vh;
         // color: red ;
+
+        img {
+            width: 200%;
+        }
 
         .headerFlex {
             display: flex;

@@ -3,7 +3,7 @@ import netflixheader from '../../assets/netflixheader.jpg';
 import './Header.scss';
 
 const Header = () => {
-    return (
+    return ( 
         <div className='header'> 
             {/* <h1>Welcome to the header</h1> */}
             <picture>

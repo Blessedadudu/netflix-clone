@@ -167,10 +167,7 @@
     
             label {
                 padding: .4rem 1rem .6rem 1rem;
-                white-space: nowrap;
                 font-size: 1rem;
-                font-weight: 400;
-                text-transform: uppercase;
                 border-radius: 3px;
     
                 span {
@@ -178,43 +175,12 @@
                     display: inline-block;
                     transform: scaleY(1.2) translateY(-2%);
                     padding-left: .4rem;
-                    font-weight: 400;
                 }
             }
         }
     
     }
    
-}
-
-@media only screen and (max-width: 900px) {
-    .inputEmail {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgb(2, 228, 152) !important;
-
-        input {
-            padding: 1.1rem 14rem 1.1rem 1rem;
-            font-size: 18px;
-        }
-
-        label {
-            padding: .5rem 4rem .9rem 1rem;
-            white-space: nowrap;
-            font-size: 1.622rem;
-            font-weight: 400;
-            text-transform: uppercase;
-
-            span {
-                font-size: 2rem;
-                display: inline-block;
-                transform: scaleY(1.4) translateY(-3%);
-                padding-left: .5rem;
-                font-weight: 400;
-            }
-        }
-    }
 }
 
 
@@ -251,7 +217,26 @@
             } 
     
         }
+
+
+        .inputEmail {
+
+            input {
+                padding: 1rem 18rem 1rem .5rem;
+                font-size: 13px;
+                margin-bottom: 1rem;
+            }
+    
+           
+        }
+
+        .ready {
+            font-size: 18px;
+            font-weight: 400;
+            padding: 1rem 0
+        }
     }
+
 
     .check {
     
@@ -265,9 +250,9 @@
                 display: inline-block;
                 background-color: white;
             }
-        }  
+        }
+         
     }
-
 
     
 }
