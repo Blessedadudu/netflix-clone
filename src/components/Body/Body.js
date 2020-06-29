@@ -19,7 +19,7 @@ const Body = () => {
             </section>
             <section className='section1 section22'>
                     <div className='imageRel section2'>
-                        {/* <h1>omage</h1> */}
+                        {/* <h1>omage</h1> */} 
                         <img alt="" className="card" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="our-story-card-img"/>
                         
                        <div className='strangerCard'>
